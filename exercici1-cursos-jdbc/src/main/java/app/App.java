@@ -50,7 +50,10 @@ public class App {
 
     private void llistarCursos() {
         ArrayList<Curs> cursos = cursService.obtenirTots();
-        cursos.forEach(System.out::println);
+        for (Curs curs : cursos) {
+            System.out.println(curs);
+        }
+        
     }
 
     private void veureCurs() {

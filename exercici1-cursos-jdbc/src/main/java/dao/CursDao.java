@@ -57,6 +57,7 @@ public class CursDao {
 
             while (rs.next()) {
                 cursos.add(mapRowToCurs(rs));
+                
             }
             return cursos;
         } catch (SQLException e) {
