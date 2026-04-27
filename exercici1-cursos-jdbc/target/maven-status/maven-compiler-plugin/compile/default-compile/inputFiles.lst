@@ -1,0 +1,10 @@
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/model/Curs.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/db/DatabaseConnection.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/service/CursService.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/dao/CursDao.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/exception/ConfigurationException.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/exception/ValidationException.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/exception/BusinessException.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/exception/DataAccessException.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/exception/ResourceNotFoundException.java
+/home/jselga/Downloads/solucions-exercicis-jdbc(2)/solucions-jdbc-projectes/exercici1-cursos-jdbc/src/main/java/app/App.java
