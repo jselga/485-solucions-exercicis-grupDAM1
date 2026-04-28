@@ -53,7 +53,7 @@ public class App {
         for (Curs curs : cursos) {
             System.out.println(curs);
         }
-        
+
     }
 
     private void veureCurs() {
@@ -71,10 +71,12 @@ public class App {
 
     private void actualitzarCurs() {
         int id = llegirEnter("Id del curs: ");
-        String nom = llegirText("Nou nom: ");
-        String nivell = llegirText("Nou nivell: ");
-        cursService.actualitzarCurs(id, nom, nivell);
-        System.out.println("Curs actualitzat correctament.");
+        if (cursService.obtenirPerId(id) != null) {
+            String nom = llegirText("Nou nom: ");
+            String nivell = llegirText("Nou nivell: ");
+            cursService.actualitzarCurs(id, nom, nivell);
+            System.out.println("Curs actualitzat correctament.");
+        }
     }
 
     private void eliminarCurs() {
