@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class CursService {
 
-    private static final Set<String> NIVELLS_PERMESOS = Set.of("1r DAM", "2n DAM", "1r DAW", "2n DAW");
+    // private static final Set<String> NIVELLS_PERMESOS = Set.of("1r DAM", "2n DAM", "1r DAW", "2n DAW");
     private final CursDao cursDao;
 
     public CursService() {
@@ -66,9 +66,9 @@ public class CursService {
         if (nivell == null || nivell.isBlank()) {
             throw new ValidationException("El nivell no pot estar buit.");
         }
-        if (!NIVELLS_PERMESOS.contains(nivell.trim())) {
-            throw new ValidationException("El nivell no és permès.");
-        }
+        // if (!NIVELLS_PERMESOS.contains(nivell.trim())) {
+        //     throw new ValidationException("El nivell no és permès.");
+        // }
     }
 
     private void validarId(int id, String missatge) {

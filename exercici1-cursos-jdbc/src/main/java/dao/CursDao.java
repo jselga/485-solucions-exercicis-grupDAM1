@@ -1,11 +1,14 @@
 package dao;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 import db.DatabaseConnection;
 import exception.DataAccessException;
 import model.Curs;
-
-import java.sql.*;
-import java.util.ArrayList;
 
 public class CursDao {
 
@@ -13,17 +16,16 @@ public class CursDao {
         String sql = "INSERT INTO cursos (nom, nivell) VALUES (?, ?)";
 
         try (Connection conn = DatabaseConnection.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
-
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            //  PreparedStatement ps = conn.prepareStatement(sql), Statement.RETURN_GENERATED_KEYS)) {
             ps.setString(1, curs.getNom());
             ps.setString(2, curs.getNivell());
             ps.executeUpdate();
-
-            try (ResultSet rs = ps.getGeneratedKeys()) {
-                if (rs.next()) {
-                    curs.setId(rs.getInt(1));
-                }
-            }
+            // try (ResultSet rs = ps.getGeneratedKeys()) {
+            //     if (rs.next()) {
+            //         curs.setId(rs.getInt(1));
+            //     }
+            // }
         } catch (SQLException e) {
             throw new DataAccessException("No s'ha pogut inserir el curs '" + curs.getNom() + "'.", e);
         }
